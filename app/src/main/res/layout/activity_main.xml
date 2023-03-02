@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="133dp"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Chronometer>
+
+    <ImageView
+        android:id="@+id/startImage"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="249dp"
+        android:src="@drawable/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    </ImageView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/custom_btn"
+        android:backgroundTint="@color/black"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/startImage"
+        app:layout_constraintEnd_toEndOf="@+id/startImage"
+        app:layout_constraintTop_toTopOf="@+id/startImage"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Stop"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/startImage"
+        app:layout_constraintEnd_toEndOf="@+id/startImage"
+        app:layout_constraintStart_toStartOf="@+id/startImage"
+        app:layout_constraintTop_toTopOf="@+id/startImage"
+        app:layout_constraintVertical_bias="0.491" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reset"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="264dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/custom_btn"
+        android:backgroundTint="@color/black"
+        android:text="reset"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="120dp"
+        android:src="@drawable/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/startImage">
+
+
+    </ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
